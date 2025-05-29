@@ -1,0 +1,11 @@
+TYP - definiuje rodzaj wartości które mogą przechowywać zmienn
+OBIEKT - to konkretna zmienna stworzona na podstawie definicji
+VALUE/WARTOŚĆ - wartość danych przechowywanych przez zmienną
+VARIABLE/ZMIENNA - to nazwany obszar pamięci przechowujący wartości danego typu 
+DECLARATION/DEKLARACJA - informuje kompilator o typie zmiennej 
+DEFINITION/DEFINICJA - definiuje typ i wartość zmiennej 
+INCREMENT/INKREMENTACJA - zwiekszenie wrtości o 1
+CONCATENATION/KONKATENACJA - łączenie stringów
+CONVERSION/KONWERSJA - zmiana typu danych 
+DECREMENT/DEKREMENTACJA - zmniejszenie wartości o 1
+NARROWING/ZWĘŻENIE - konwersja danych, np z double do int
