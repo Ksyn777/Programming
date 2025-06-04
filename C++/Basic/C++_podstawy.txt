@@ -9,3 +9,42 @@ CONCATENATION/KONKATENACJA - łączenie stringów
 CONVERSION/KONWERSJA - zmiana typu danych 
 DECREMENT/DEKREMENTACJA - zmniejszenie wartości o 1
 NARROWING/ZWĘŻENIE - konwersja danych, np z double do int
+COMPUTATION/OBLICZENIA - Wykonywani eoperacji arytmetycznych przez komputer
+EXPRESSION/WYRAŻENIE - to fragment kodu który po wykonaniu zwraca jakaś wartość
+STATEMENT/INSTRUKCJA 
+LVALUE - coś co można znaleźć po lewej stronie operatora przypisania
+CONSTANT EXPRESSION/WYRAŻENIE STAŁE(constexpr) - to wartość wyrażenia która jest ustalana w czasie kompilacji, jets to stała niezmienna
+wartość
+LITERAL - stała wartość 
+MAGIC CONSTANT/MAGICZNA STAŁA - wartość, która jest automatycznie uzupełniana przez kompilator i reprezentuje pewne informacje o kodzie 
+źródłowym, np. lokalizację, nazwę funkcji, plik czy linię.
+FLOATING POINT VALUES/WARTOŚCI ZMIENNOPRZECINKOWE   
+
+
+ITERACJE - powtarzanie
+    for(dla)
+    do...while(powtarzaj)
+    while(dopoki)
+1.INICJALIZACJA to zwykle instrukcja przypisania stosowana do ustawienia poczatkowej wartości streującej pętlą
+2.WARUNEK jest wyrażeniem relacyjnym okreslającym moment zakończenia wykonywania pętli
+3.INKREMENTACJA(zwiększenie) lub DEKREMENTACJA(zmniejszenie) definują sposoby modyfikacji zmiennej sterującej pętla.
+
+for(inicjalizacja; warunek; zwiekszanie/zmniejszanie)
+{
+    instrukcje
+}
+
+do 
+{
+    instrukcje
+}
+while(warunek);
+Bez względu na wartość zmiennej warunek pętla musi zostac wykonana przynajmniej raz.
+Program wchodzi do pętli i wykonuje instrukcje, a nastepnie sprawdza czy warunek jest spelniony.
+Jesli tak, wraca do poczatku petli, natomiast gdy wystapi false to konczy program. 
+
+while(warunek)
+{
+    instrukcje
+}
+Najpierw sprawdza warunek a pozniej wykonuje petle. W szczegolnych przypadkach petla moze wgl nie zostac wykonana
