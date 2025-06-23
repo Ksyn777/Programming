@@ -48,3 +48,42 @@ while(warunek)
     instrukcje
 }
 Najpierw sprawdza warunek a pozniej wykonuje petle. W szczegolnych przypadkach petla moze wgl nie zostac wykonana
+
+switch(zmienna)
+    case 1:
+            indtrukcje;
+    break;
+zmienna może byc int lub char
+aby sprawdzic czy zmienna ma wymagany typ uzywamy 
+biblioteka #include <cstdlib>
+if(!(cin>>zmienna))
+{
+    cerr<<"To nie jest liczba";
+    exit(0);
+}
+
+Praca z plikami
+biblioteka #include <fstream>
+        ZAPIS DO PLIKU
+tworzymy zmienne, pobieramy od uzytkownika następnie:
+tworzymy plik fstream plik;
+otwieramy plik - plik.open("Nazwa.txt", ios::out); 
+jeżeli chcemy dołączyc do istniejącego pliku kolejne dane: plik.open("Nazwa.txt", ios::out | ios::app); app od append
+wrzucamy pobrane zmienne do plików - plik<<zmienna<<endl;
+zamykamy plik: plik.close();
+        ODCZYT Z PLIKU
+otwieramy plik - plik.open("Nazwa.txt", ios::in); ios::in słuzy do odczytu pliku
+if(plik.good()==false) - sprawdza czy plik istnieje
+string linia;
+getline(plik, linia) - wczytuje jedną linie tekstu
+while (getline(plik, linia)) {
+    switch(zmienna_nuemr_lini)
+    {
+        case 1: imie = linia; break;
+        case 2: nazwisko = linia; break;
+        case 3: numer_tel = linia; break;
+    }
+    zmienna_numer_lini++;
+}
+Czyta linie po linie.
+    
