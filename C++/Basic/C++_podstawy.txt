@@ -48,3 +48,60 @@ while(warunek)
     instrukcje
 }
 Najpierw sprawdza warunek a pozniej wykonuje petle. W szczegolnych przypadkach petla moze wgl nie zostac wykonana
+
+switch(zmienna)
+    case 1:
+            indtrukcje;
+    break;
+zmienna może byc int lub char
+aby sprawdzic czy zmienna ma wymagany typ uzywamy 
+biblioteka #include <cstdlib>
+if(!(cin>>zmienna))
+{
+    cerr<<"To nie jest liczba";
+    exit(0);
+}
+
+Praca z plikami
+biblioteka #include <fstream>
+        ZAPIS DO PLIKU
+tworzymy zmienne, pobieramy od uzytkownika następnie:
+tworzymy plik fstream plik;
+otwieramy plik - plik.open("Nazwa.txt", ios::out); 
+jeżeli chcemy dołączyc do istniejącego pliku kolejne dane: plik.open("Nazwa.txt", ios::out | ios::app); app od append
+wrzucamy pobrane zmienne do plików - plik<<zmienna<<endl;
+zamykamy plik: plik.close();
+        ODCZYT Z PLIKU
+otwieramy plik - plik.open("Nazwa.txt", ios::in); ios::in słuzy do odczytu pliku
+if(plik.good()==false) - sprawdza czy plik istnieje
+string linia;
+getline(plik, linia) - wczytuje jedną linie tekstu
+while (getline(plik, linia)) {
+    switch(zmienna_nuemr_lini)
+    {
+        case 1: imie = linia; break;
+        case 2: nazwisko = linia; break;
+        case 3: numer_tel = linia; break;
+    }
+    zmienna_numer_lini++;
+}
+Czyta linie po linie.
+                                        STRINGI #include <string>
+string to tak na prawde tablica, która może przechowywać ciąg znaków, każda litera w w tym ciagu odpowiada innemu indeksowi(znaki białe też)
+Aby zmierzyć długość ciagu znaków uzywamy -  zmienna.lenght()
+Dzialania na tablicach - tablica[zmienna - 1]
+Apostrofy dla napisów a cudzysłowy dla pojedynczych znakow 
+odwroceni wyrazow
+for(int i = dlugosc zmiennej - 1; i> 0; i--)
+getline(cin, zmienna) - pobierz od uzytkownika cały ciąg znaków
+kotanenacja - dodawanie stringów
+Zmiana wielkości liter w napisach: transform(zmienna.begin(), zmienna.end(), napis.begin(),::toupper/tolower);
+Znajdowanie frazy w tekście: 
+        size_t pozycja=zmienna.find(szukaj(to jest zmienna));
+if(pozycja!=string::npos)
+    cout<<"znaleziono na pozycji: "<<pozycja;
+else
+    cout<<"Nie znaleziono" 
+Kasowanie fragmentu: zmienna.erase(indeks poczatkowy, końcowy)
+Wstawianie do łańcucha: zmienna.insert(od indeksu, "teskst")
+
