@@ -86,4 +86,22 @@ while (getline(plik, linia)) {
     zmienna_numer_lini++;
 }
 Czyta linie po linie.
-    
+                                        STRINGI #include <string>
+string to tak na prawde tablica, która może przechowywać ciąg znaków, każda litera w w tym ciagu odpowiada innemu indeksowi(znaki białe też)
+Aby zmierzyć długość ciagu znaków uzywamy -  zmienna.lenght()
+Dzialania na tablicach - tablica[zmienna - 1]
+Apostrofy dla napisów a cudzysłowy dla pojedynczych znakow 
+odwroceni wyrazow
+for(int i = dlugosc zmiennej - 1; i> 0; i--)
+getline(cin, zmienna) - pobierz od uzytkownika cały ciąg znaków
+kotanenacja - dodawanie stringów
+Zmiana wielkości liter w napisach: transform(zmienna.begin(), zmienna.end(), napis.begin(),::toupper/tolower);
+Znajdowanie frazy w tekście: 
+        size_t pozycja=zmienna.find(szukaj(to jest zmienna));
+if(pozycja!=string::npos)
+    cout<<"znaleziono na pozycji: "<<pozycja;
+else
+    cout<<"Nie znaleziono" 
+Kasowanie fragmentu: zmienna.erase(indeks poczatkowy, końcowy)
+Wstawianie do łańcucha: zmienna.insert(od indeksu, "teskst")
+
