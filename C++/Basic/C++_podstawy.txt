@@ -104,4 +104,38 @@ else
     cout<<"Nie znaleziono" 
 Kasowanie fragmentu: zmienna.erase(indeks poczatkowy, końcowy)
 Wstawianie do łańcucha: zmienna.insert(od indeksu, "teskst")
+						FUNKCJE
+funkcja = podprogram
+iny main() - główny program do zarządzania funkcjami 
+redundancja - powtarzanie kodu 
+programowanie procedurane - zespół współpracujących ze sobą podprogramów zarądzanych programem głownym o nazwie main(), dzilenie kodu na podprogramy.
+void nazwa_funkcji() to pusta procedura/funkcja ktora nic nie zwraca. 
+
+					WSKAŹNIKI. ALKOWANIE PAMIĘCI
+
+wskaźnik to zmienna przechowująca w sobie adres pamięci RAM innej zmiennej
+int liczba = 144;
+int *w(nazwa skłądnika w kodzie);
+w = &liczba; przypisujemy adres liczba
+wskaźnik do pojemnik na dane, mający adres innej zmiennej
+aby wypuścić zmienna ze wskaźnika na ekran nalezy cout<<*w; 
+Praca na wskaźnikach a tablice, świetnym przykładem może być rezerwowanie miejsc w tablicy przy pomocy wskaźnika, uzytkownik podaje ile miejsc potrzebuje a
+program automatycznie rerzewuje to miejsce
+int ile;
+int *tablica;
+tablica = new tablica[ile];
+zwolenienie tablicy: delete [] tablica;
+nazwa tablicy jest jednocześnie adresem jej zerowego elementu czyli w = &tablica[0] == w = &tablica;
+
+					REKURENCJA
+oznacza w programowaniu sytuację, kiedy funkcja w celu zwrócenia prawidłowgo wyniku wywołuje sama siebe, aż do napotkania tzw przypadku podstawowego
+
+int f(int n)
+{
+if (n==0) return 3; przypadek podstawowy
+else return f(n-1) + 2;
+}
+1. jaki przypadek podstawowy ?
+
+g++ zad.cpp -o zad.exe
 
